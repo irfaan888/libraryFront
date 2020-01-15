@@ -1,0 +1,33 @@
+
+<form (ngSubmit)="Update()">
+    <legend>Edit Emp</legend>
+
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" [(ngModel)]="emp.Name">
+    </div>
+
+    <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="text" class="form-control" name="Email" id="Email" placeholder="Email" [(ngModel)]="emp.Email">
+        </div>
+
+        <div class="form-group">
+                <label for="Phone">Phone</label>
+                <input type="text" class="form-control" name="Phone" id="Phone" placeholder="APhonege" [(ngModel)]="emp.Phone">
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="text" class="form-control" name="Password" id="Password" placeholder="Password" [(ngModel)]="emp.Password">
+            </div>
+
+            <div class="form-group">
+                <label for="Role">Role</label>
+                <input type="text" class="form-control" name="Role" id="Role" placeholder="ARolege" [(ngModel)]="emp.Role">
+            </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+
